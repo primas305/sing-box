@@ -26,19 +26,19 @@
         {
           "name": "user1",
           "uuid": "c2794de3-9d00-4408-bb39-c95cbf46caaa",
-          "flow": "xtls-rprx-vision"
+          "flow": "ws"
         },
         {
           "name": "user2",
           "uuid": "96941b6d-c965-465a-a2f4-0f6b1e3c2657",
-          "flow": "xtls-rprx-vision"
+          "flow": "ws"
         }       
       ],
       "tls": {
-        "enabled": true,
+        "enabled": false,
         "server_name": "unpkg.com",
         "reality": {
-          "enabled": true,
+          "enabled": false,
           "handshake": {
             "server": "unpkg.com",
             "server_port": 443
