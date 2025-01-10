@@ -15,7 +15,7 @@
         {
           "name": "user2",
           "password": "DO/NgDIj7JOM0M/uKOuz1A=="
-        }
+        }                 
       ]
     },
     {
@@ -32,59 +32,23 @@
           "name": "user2",
           "uuid": "96941b6d-c965-465a-a2f4-0f6b1e3c2657",
           "flow": "xtls-rprx-vision"
-        }
+        }       
       ],
       "tls": {
         "enabled": true,
-        "server_name": "www.microsoft.com"
-      }
-    },
-    {
-      "type": "vless",
-      "listen": "::",
-      "listen_port": 443,
-      "protocol": "ws",
-      "users": [
-        {
-          "name": "user1",
-          "uuid": "c2794de3-9d00-4408-bb39-c95cbf46caaa"
-        },
-        {
-          "name": "user2",
-          "uuid": "96941b6d-c965-465a-a2f4-0f6b1e3c2657"
+        "server_name": "unpkg.com",
+        "reality": {
+          "enabled": true,
+          "handshake": {
+            "server": "unpkg.com",
+            "server_port": 443
+            },
+            "private_key": "KCaRO6tGf6dLXH21HOJkPaKYQAG64WdR4JVHx41TLnc",
+            "short_id": [
+              "b627ec56b4f8ff40"
+            ],
+            "max_time_difference": "5m"
         }
-      ],
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com"
-      },
-      "stream_settings": {
-        "network": "ws",
-        "ws_settings": {
-          "path": "/vless"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "listen": "::",
-      "listen_port": 443,
-      "users": [
-        {
-          "name": "user1",
-          "uuid": "c2794de3-9d00-4408-bb39-c95cbf46caaa"
-        },
-        {
-          "name": "user2",
-          "uuid": "96941b6d-c965-465a-a2f4-0f6b1e3c2657"
-        }
-      ],
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com"
-      },
-      "stream_settings": {
-        "network": "tcp"
       }
     }
   ]
