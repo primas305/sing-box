@@ -1,5 +1,5 @@
 ARG RELEASE
-FROM ghcr.io/sagernet/sing-box:${RELEASE} AS sing-box
+FROM ghcr.io/sagernet/sing-box:latest AS sing-box
 
 FROM alpine:3.18.7
 
